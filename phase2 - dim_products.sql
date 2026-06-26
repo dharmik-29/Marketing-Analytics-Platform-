@@ -1,5 +1,6 @@
 -- SQL Query to categorize products based on their price
-
+USE PortfolioProject_MarketingAnalytics;   -- or AdventureWorksDW2022
+GO
 SELECT 
     ProductID,  -- Selects the unique identifier for each product
     ProductName,  -- Selects the name of each product

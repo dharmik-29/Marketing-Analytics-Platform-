@@ -1,5 +1,6 @@
 -- SQL statement to join dim_customers with dim_geography to enrich customer data with geographic information
-
+USE PortfolioProject_MarketingAnalytics;   -- or AdventureWorksDW2022
+GO
 SELECT 
     c.CustomerID,  -- Selects the unique identifier for each customer
     c.CustomerName,  -- Selects the name of each customer

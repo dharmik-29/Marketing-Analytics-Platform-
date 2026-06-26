@@ -1,5 +1,6 @@
 -- Query to clean whitespace issues in the ReviewText column
-
+USE PortfolioProject_MarketingAnalytics;   -- or AdventureWorksDW2022
+GO
 SELECT 
     ReviewID,  -- Selects the unique identifier for each review
     CustomerID,  -- Selects the unique identifier for each customer

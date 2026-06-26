@@ -1,5 +1,6 @@
 -- Common Table Expression (CTE) to identify and tag duplicate records
-
+USE PortfolioProject_MarketingAnalytics;   -- or AdventureWorksDW2022
+GO
 WITH DuplicateRecords AS (
     SELECT 
         JourneyID,  -- Select the unique identifier for each journey (and any other columns you want to include in the final result set)

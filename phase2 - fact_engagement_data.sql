@@ -1,5 +1,6 @@
 -- Query to clean and normalize the engagement_data table
-
+USE PortfolioProject_MarketingAnalytics;   -- or AdventureWorksDW2022
+GO
 SELECT 
     EngagementID,  -- Selects the unique identifier for each engagement record
     ContentID,  -- Selects the unique identifier for each piece of content

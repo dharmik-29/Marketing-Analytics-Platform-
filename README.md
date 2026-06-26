@@ -56,6 +56,43 @@ Fixes double-space issues in the ReviewText column using REPLACE().
 **fact_engagement_data.sql**
 Corrects inconsistent content type labels, splits the Views and Clicks combined column into two separate columns, and standardizes the date format to dd.MM.yyyy.
 
+## Phase 3 — Advanced Sentiment Analysis using Python
+
+Connects to the SQL Server database, pulls the cleaned customer reviews, and runs sentiment analysis using NLTK's VADER model.
+
+### What the Script Does
+
+**customer_reviews_enrichment.py**
+Fetches customer reviews from `dbo.customer_reviews`, cleans double spaces in the review text, and enriches each record with three new columns:
+
+| Column | Description |
+|--------|-------------|
+| SentimentScore | A score between -1 (most negative) and 1 (most positive) |
+| SentimentCategory | Positive, Negative, Neutral, Mixed Positive, or Mixed Negative |
+| SentimentBucket | Score grouped into ranges: -1.0 to -0.5, -0.49 to 0.0, 0.0 to 0.49, 0.5 to 1.0 |
+
+The final output is saved as `fact_customer_reviews_with_sentiment.csv` for use in Power BI.
+
+### Tools Used
+
+- Python 3
+- pandas
+- NLTK (VADER Sentiment Analyzer)
+- SQLAlchemy
+- SQL Server
+
+### How to Run
+
+1. Install dependencies:
+```bash
+   pip install pandas nltk sqlalchemy pyodbc
+```
+2. Run the script:
+```bash
+   python customer_reviews_enrichment.py
+```
+3. Output file `fact_customer_reviews_with_sentiment.csv` will be saved in the same folder.
+
 ---
 
 ## Tools Used

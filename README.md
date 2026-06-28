@@ -163,3 +163,8 @@ The business case presentation is available in the `/docs` folder.
 - [x] Phase 3 — Advanced Sentiment Analysis using Python
 - [x] Phase 4 — Interactive Power BI Dashboard
 - [x] Phase 5 — Presenting Data to Stakeholders
+
+![Dashboard-1](images/dashboard-1.png)
+![Dashboard-2](images/dashboard-2.png)
+![Dashboard-3](images/dashboard-3.png)
+![Dashboard-4](images/dashboard-4.png)

@@ -111,10 +111,55 @@ The final output is saved as `fact_customer_reviews_with_sentiment.csv` for use 
 
 ---
 
+## Phase 4 — Interactive Power BI Dashboard
+
+Built an interactive Power BI dashboard to visualize the cleaned and enriched data, enabling the marketing team to explore performance across customers, products, and campaigns.
+
+### What the Dashboard Covers
+
+- Customer conversion rates by region, product, and journey stage
+- Sentiment breakdown of customer reviews by product and rating
+- Marketing campaign engagement metrics — views, clicks, and likes by content type
+- Revenue trends segmented by product price category
+
+### Tools Used
+
+- Power BI Desktop
+- DAX for calculated measures
+- `fact_customer_reviews_with_sentiment.csv` as the sentiment data source
+- SQL Server as the primary data source
+
+---
+
+## Phase 5 — Presenting Data to Stakeholders
+
+Findings were compiled and presented to stakeholders using a structured presentation covering the business problem, methodology, key insights, and recommended actions.
+
+### Key Insights Delivered
+
+- Identified the customer segments with the highest drop-off rates in the journey funnel
+- Highlighted products with high ratings but negative sentiment — indicating a gap between score and review text
+- Pinpointed underperforming campaign content types and recommended reallocation of marketing spend
+
+The business case presentation is available in the `/docs` folder.
+
+---
+
+## Tools and Skills
+
+| Area | Tools |
+|------|-------|
+| Data Cleaning | SQL Server, T-SQL, SSMS |
+| Python Analysis | pandas, NLTK, SQLAlchemy |
+| Visualization | Power BI, DAX |
+| Version Control | Git, GitHub |
+
+---
+
 ## Roadmap
 
 - [x] Phase 1 — Business Case and Project Planning
 - [x] Phase 2 — Data Cleaning with SQL
-- [ ] Phase 3 — Advanced Sentiment Analysis using Python
-- [ ] Phase 4 — Interactive Power BI Dashboard
-- [ ] Phase 5 — Presenting Data to Stakeholders
+- [x] Phase 3 — Advanced Sentiment Analysis using Python
+- [x] Phase 4 — Interactive Power BI Dashboard
+- [x] Phase 5 — Presenting Data to Stakeholders
